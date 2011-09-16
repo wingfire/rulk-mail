@@ -11,12 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110915171119) do
+ActiveRecord::Schema.define(:version => 20110916133940) do
 
   create_table "campaigns", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "data"
+    t.string   "template_html"
+    t.string   "template_text"
   end
 
 end
