@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110916133940) do
+ActiveRecord::Schema.define(:version => 20110923130634) do
 
   create_table "campaigns", :force => true do |t|
     t.string   "name"
@@ -20,6 +20,11 @@ ActiveRecord::Schema.define(:version => 20110916133940) do
     t.string   "data"
     t.string   "template_html"
     t.string   "template_text"
+    t.string   "subject"
+    t.string   "from"
+    t.string   "reply"
+    t.string   "cc"
+    t.string   "bcc"
   end
 
 end
